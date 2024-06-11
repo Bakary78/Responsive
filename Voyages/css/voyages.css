@@ -1,53 +1,56 @@
 
+.container{
+    margin: auto; 
+    
+}
+
 nav {
     background: linear-gradient(to top ,rgb(28, 192, 178),rgb(155, 248, 212) );
     color: white;
  
 }
 
-
 nav p{
     text-align: right;
     border-style: double;
     border-color: rgb(241, 241, 231);
 }
-.colonne1{
+
+.zone1{
     background: linear-gradient(to top ,rgb(122, 86, 122),rgb(128, 156, 209) );
     color: white;
-    justify-content: space-between;
-    text-align: left;
     border-radius: 30px;
-    height: 250px;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
 
-    margin-left: 200px;
-    margin-right: 200px;
 }
     
 
 
-.colonne2{
+.zone2{
     background: linear-gradient(to top ,rgb(119, 226, 212),rgb(98, 141, 223) );
     color: white;
-    text-align: center;
     border-radius: 30px;
-    height: 250px;
-    margin-left: 200px;
-    margin-right: 200px;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+  
+    
 }
 
 
-.colonne3{
+.zone3{
     background: linear-gradient(to top ,rgb(201, 127, 42),rgb(95, 106, 126) );
     color: white;
-    text-align: right;
     border-radius: 30px;
-    height: 250px;
-    margin-left: 200px;
-    margin-right: 200px;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
-.colonne{
+.zone{
     display: flex;
     flex-wrap: wrap;
     border-radius: 30px;
@@ -65,26 +68,61 @@ img{
 }
 
 
-.colonne1 img {
+.zone1 img {
     border-radius: 50%;
-    align-items: flex-start;
+    margin-left: 100%;
     height: 200px;
     width: 200px;
-}
-.colonne2 img {
-    border-radius: 50%;
-    justify-content: flex-end;
-    height: 100px;
-    width: 100px;
+    margin-top: 30%;
 }
 
-.colonne3 img {
+.zone2 img {
     border-radius: 50%;
-    justify-content: flex-start;
-    height: 100px;
-    width: 100px;    
-    }
+    margin-left: 450%;
+    height: 200px;
+    width: 200px;
+    margin-top: 30%;
+}
 
+.zone3 img {
+    border-radius: 50%;
+    margin-left: 100%;
+    height: 200px;
+    width: 200px;
+    margin-top: 30%;
+}
+
+    
+.zone1 .text1 {
+    margin-left: 42%;
+    text-align: left   
+}
+.zone2 .text2 {
+    margin-right: 50%;
+    text-align: center  
+}
+.zone3 .text3 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 44%;
+    text-align: right;
+    margin-right: 3%;
+}
+    
+@media screen and (max-width: 768px)
+{    
+     * {         margin: 0;
+                 box-sizing: border-box;        
+                  font-family: 'Kufam', cursive;        
+                   color: white;         
+                   padding: 0;        
+                    flex-direction: column;    
+         }
+
+
+}
+            
+    
 
     
 
